@@ -9,7 +9,7 @@ const projectData = [
     image: "/work/life-and-sole.png",
     category: "nextjs",
     name: "Life & Sole",
-    description: "A cool website I create for my local gym.",
+    description: "A cool website I created for my local gym.",
     link: "https://lifeandsole.vercel.app/",
     github: "https://github.com/axelzwaans/life-and-sole",
   },

@@ -13,7 +13,6 @@ import {
 } from "react-icons/ri";
 
 // Components
-import DevImg from "./DevImg";
 import Badge from "./Badge";
 import Socials from "./Socials";
 
@@ -37,10 +36,10 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Web Developer
             </div>
-            <h1 className="h1 mb-4">Hi, I'm Axel</h1>
+            <h1 className="h1 mb-4">Hi, I&apos;m Axel</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              I'm a Front-End Developer with a passion for creating beautiful
-              websites.
+              I&apos;m a Front-End Developer with a passion for creating
+              beautiful websites.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
