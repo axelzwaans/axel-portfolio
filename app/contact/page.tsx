@@ -20,7 +20,7 @@ const Contact = () => {
             </p>
           </div>
           {/* illustration */}
-          <div className="hidden xl:flex w-full bg-contact_illustration_light dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat"></div>
+          <div className="hidden xl:flex w-full bg-contact_illustration dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat"></div>
         </div>
 
         {/* info text & form */}

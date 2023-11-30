@@ -6,6 +6,15 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
+    image: "/work/hotely.png",
+    category: "nextjs",
+    name: "Hotely",
+    description:
+      "A fully responsive hotel landing page built with Next.js and Tailwind CSS.",
+    link: "https://hotely-smoky.vercel.app/",
+    github: "https://github.com/axelzwaans/hotely",
+  },
+  {
     image: "/work/life-and-sole.png",
     category: "nextjs",
     name: "Life & Sole",

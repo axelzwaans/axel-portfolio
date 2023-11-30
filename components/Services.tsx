@@ -12,13 +12,13 @@ const servicesData = [
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
     title: "Web Design",
     description:
-      "Stand out online with unique, eye-catching designs tailored to you or your brand.",
+      "Elevate your online presence with personalized designs. From sleek landing pages to powerful e-commerce sites, let's blend simplicity with creativity to make your brand stand out.",
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: "Web Development",
     description:
-      "Move beyond templates with custom, high-performance websites to elevate your online presence.",
+      "Move beyond templates with custom, high-performance websites that not only elevate your online presence but also prioritize functionality, boost performance, and adapt seamlessly to your evolving needs.",
   },
 ];
 

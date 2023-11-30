@@ -17,7 +17,7 @@ const Computers = () => {
 
   return (
     <mesh ref={meshRef}>
-      <hemisphereLight intensity={0.15} groundColor="black" />
+      <hemisphereLight intensity={0.02} groundColor="black" />
       <spotLight
         position={[-20, 50, 10]}
         angle={0.12}
@@ -26,12 +26,12 @@ const Computers = () => {
         castShadow
         shadow-mapSize={1024}
       />
-      <pointLight intensity={4} />
+      <pointLight intensity={14} />
       <primitive
         object={computer.scene}
         scale={1.6}
         position={[0, -1.5, 0]}
-        rotation={[0, 0, 0]}
+        rotation={[0.2, 0, 0]}
       />
     </mesh>
   );

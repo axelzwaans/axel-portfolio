@@ -36,10 +36,11 @@ const Hero = () => {
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
               Web Developer
             </div>
-            <h1 className="h1 mb-4">Hi, I&apos;m Axel</h1>
+            <h1 className="h1 mb-4">Hi, I&apos;m Axel...</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              I&apos;m a Front-End Developer with a passion for creating
-              beautiful websites.
+              I&apos;m a Scotland based front-end developer. I create
+              responsive, stunning and high-performing websites that elevate
+              your online presence.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
@@ -73,7 +74,7 @@ const Hero = () => {
             <Badge
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill />}
-              endCountNum={3}
+              endCountNum={2}
               badgeText="Years Of Experience"
             />
             {/* badge 2 */}
@@ -87,7 +88,7 @@ const Hero = () => {
             <Badge
               containerStyles="absolute top-[55%] -right-8"
               icon={<RiTeamFill />}
-              endCountNum={43}
+              endCountNum={8}
               badgeText="Happy Clients"
             />
           </div>
