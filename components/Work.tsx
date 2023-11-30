@@ -14,8 +14,19 @@ import { Pagination } from "swiper/modules";
 
 // components
 import ProjectCard from "@/components/ProjectCard";
+import { fadeIn } from "@/variants";
+import { motion } from "framer-motion";
 
 const projectData = [
+  {
+    image: "/work/hotely.png",
+    category: "nextjs",
+    name: "Hotely",
+    description:
+      "A fully responsive hotel landing page built with Next.js and Tailwind CSS.",
+    link: "https://hotely-smoky.vercel.app/",
+    github: "https://github.com/axelzwaans/hotely",
+  },
   {
     image: "/work/life-and-sole.png",
     category: "nextjs",
@@ -67,7 +78,13 @@ const Work = () => {
     <section className="relative mb-12 xl:mb-48">
       <div className="container mx-auto">
         {/* text */}
-        <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
+        <motion.div
+          variants={fadeIn("right", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start"
+        >
           <h2 className="section-title mb-4">Latest Projects</h2>
           <p className="subtitle mb-8 xl:max-w-[350px]">
             Check out some of the projects I&apos;ve been working on.
@@ -75,9 +92,15 @@ const Work = () => {
           <Link href="/projects">
             <Button>All projects</Button>
           </Link>
-        </div>
+        </motion.div>
         {/* slider */}
-        <div className="xl:max-w-[1000px] xl:absolute right-0 top-0 xl:px-8">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="xl:max-w-[1000px] xl:absolute right-0 top-0 xl:px-8"
+        >
           <Swiper
             className="h-[480px]"
             slidesPerView={1}
@@ -95,7 +118,7 @@ const Work = () => {
               );
             })}
           </Swiper>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

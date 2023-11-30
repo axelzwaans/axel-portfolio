@@ -1,3 +1,5 @@
+"use client";
+
 import { GanttChartSquare, Blocks } from "lucide-react";
 import {
   Card,
@@ -6,6 +8,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 const servicesData = [
   {
@@ -18,7 +23,7 @@ const servicesData = [
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: "Web Development",
     description:
-      "Move beyond templates with custom, high-performance websites that not only elevate your online presence but also prioritize functionality, boost performance, and adapt seamlessly to your evolving needs.",
+      "Move beyond templates with custom, high-performance websites that prioritize functionality, boost performance, and adapt seamlessly to your evolving needs.",
   },
 ];
 
@@ -26,11 +31,23 @@ const Services = () => {
   return (
     <section className="mb-12 xl:mb-36">
       <div className="container mx-auto">
-        <h2 className="section-title mb-12 xl:mb-24 text-center mx-auto">
+        <motion.h2
+          variants={fadeIn("left", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="section-title mb-12 xl:mb-24 text-center mx-auto"
+        >
           My Services
-        </h2>
+        </motion.h2>
         {/* grid items */}
-        <div className="grid xl:grid-flow-col justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8">
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="grid xl:grid-flow-col justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8"
+        >
           {servicesData.map((item, index) => {
             return (
               <Card
@@ -51,7 +68,7 @@ const Services = () => {
               </Card>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

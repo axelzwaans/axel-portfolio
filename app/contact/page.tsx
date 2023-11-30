@@ -14,13 +14,13 @@ const Contact = () => {
             </div>
             <h1 className="h1 max-w-md mb-8">Let&apos;s Work Together.</h1>
             <p className="subtitle max-w-[400px]">
-              Are you looking for a new website? Or do you have a project in
+              Are you looking for a new website or do you have a project in
               mind? Get in touch and let&apos;s discuss how we can work
               together.
             </p>
           </div>
           {/* illustration */}
-          <div className="hidden xl:flex w-full bg-contact_illustration dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat"></div>
+          <div className="hidden xl:flex w-full bg-contact_illustration_light dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat"></div>
         </div>
 
         {/* info text & form */}

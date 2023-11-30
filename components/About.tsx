@@ -1,5 +1,10 @@
+"use client";
+
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
+
+import { motion } from "framer-motion";
+import { fadeIn } from "../variants";
 
 import {
   User2,
@@ -134,14 +139,26 @@ const About = () => {
   return (
     <section className="xl:h[860px] pb-12 xl:py-24">
       <div className="container mx-auto">
-        <h2 className="section-title mb-8 xl:mb-16 text-center mx-auto">
+        <motion.h2
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="section-title mb-8 xl:mb-16 text-center mx-auto"
+        >
           About me
-        </h2>
+        </motion.h2>
 
         {/* Tabs */}
-        <div className="flex justify-center">
+        <motion.div
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.2 }}
+          className="flex justify-center"
+        >
           <Tabs defaultValue="personal">
-            <TabsList className="w-full grid xl:grid-cols-3 xl:max-w-[520px] xl:border dark:border-none">
+            <TabsList className="mx-auto w-[520px] grid xl:grid-cols-3 xl:border dark:border-none">
               <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
                 Personal Info
               </TabsTrigger>
@@ -162,9 +179,8 @@ const About = () => {
                 <div className="text-center">
                   <h3 className="h3 mb-4">Tailor-made websites</h3>
                   <p className="subtitle max-w-xl mx-auto">
-                    I create great-looking websites using the latest
-                    technologies, delivering dynamic and engaging user
-                    experiences.
+                    I create stylish websites using the latest technologies,
+                    delivering dynamic and engaging user experiences.
                   </p>
                   {/* icons */}
                   <div className="grid xl:grid-cols-2 gap-4 mb-12">
@@ -318,7 +334,7 @@ const About = () => {
               </TabsContent>
             </div>
           </Tabs>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

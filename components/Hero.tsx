@@ -39,8 +39,8 @@ const Hero = () => {
             <h1 className="h1 mb-4">Hi, I&apos;m Axel...</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
               I&apos;m a Scotland based front-end developer. I create
-              responsive, stunning and high-performing websites that elevate
-              your online presence.
+              responsive, stunning & high-performing websites that elevate your
+              online presence.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
