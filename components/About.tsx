@@ -49,7 +49,7 @@ const qualificationData = [
     data: [
       {
         university: "Code Institute",
-        qualification: "Diploma in Full-Stack Software Development",
+        qualification: "Full-Stack Software Development",
         years: "2022 - 2023",
       },
       {
@@ -68,14 +68,14 @@ const qualificationData = [
     title: "experience",
     data: [
       {
-        company: "Sailing Yacht 'CHE'",
-        role: "First Mate",
-        years: "2014 - 2018",
+        company: "Freelance",
+        role: "Web Developer",
+        years: "2022 - current",
       },
       {
-        company: "Motor Yacht 'Alicia'",
-        role: "Chase Boat Captain",
-        years: "2018 - 2020",
+        company: "Supermarket London",
+        role: "Front-End Developer",
+        years: "2022 - current",
       },
       {
         company: "Marcassie Farm Kitchen",
@@ -83,9 +83,9 @@ const qualificationData = [
         years: "2021 - 2022",
       },
       {
-        company: "Freelance",
-        role: "Front-End Developer",
-        years: "2022 - current",
+        company: "Marine Industry",
+        role: "First Mate, Skipper",
+        years: "2011 - 2021",
       },
     ],
   },
@@ -178,7 +178,7 @@ const About = () => {
               <TabsContent value="personal">
                 <div className="text-center">
                   <h3 className="h3 mb-4">Tailor-made websites</h3>
-                  <p className="subtitle max-w-xl mx-auto">
+                  <p className="subtitle w-[364px] lg:w-fit mx-auto">
                     I create stylish websites using the latest technologies,
                     delivering dynamic and engaging user experiences.
                   </p>
@@ -211,7 +211,7 @@ const About = () => {
                   {/* experience & education wrapper */}
                   <div className="grid md:grid-cols-2 gap-y-8">
                     {/* experience */}
-                    <div className="flex flex-col gap-y-6">
+                    <div className="flex flex-col gap-y-6 mx-auto">
                       <div className="flex gap-x-4 items-center text-[22px] text-primary">
                         <Briefcase />
                         <h4 className="capitalize font-medium">
@@ -246,7 +246,7 @@ const About = () => {
                       </div>
                     </div>
                     {/* education */}
-                    <div className="flex flex-col gap-y-6">
+                    <div className="flex flex-col gap-y-6 mx-auto">
                       <div className="flex gap-x-4 items-center text-[22px] text-primary">
                         <GraduationCap size={28} />
                         <h4 className="capitalize font-medium">

@@ -1,5 +1,6 @@
 import { MailIcon, HomeIcon, PhoneCall } from "lucide-react";
 import Form from "@/components/Form";
+import Lamp from "@/components/Lamp";
 
 const Contact = () => {
   return (
@@ -20,7 +21,10 @@ const Contact = () => {
             </p>
           </div>
           {/* illustration */}
-          <div className="hidden xl:flex w-full bg-contact_illustration_light dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat"></div>
+          {/* <div className="hidden xl:flex w-full bg-contact_illustration_light dark:bg-contact_illustration_dark bg-contain bg-top bg-no-repeat"></div> */}
+          <div className="hidden xl:block">
+            <Lamp />
+          </div>
         </div>
 
         {/* info text & form */}
