@@ -27,7 +27,10 @@ const Lamp = () => {
         <div className="lamp-lamp-shadow"></div>
       </div>
 
-      <form onInput={handleInputChange} className="lamp-input flex flex-col">
+      <form
+        onInput={handleInputChange}
+        className="lamp-input flex flex-col mt-[-100px]"
+      >
         <p className="text-black">Swipe me (gently...)</p>
         <div className="icon-sun">
           <i className="fa fa-sun-o" aria-hidden="true"></i>

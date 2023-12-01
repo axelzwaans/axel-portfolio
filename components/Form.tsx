@@ -81,7 +81,10 @@ const Form = () => {
 
   return (
     <div>
-      <form className="flex flex-col gap-y-4" onSubmit={handleSubmit}>
+      <form
+        className="flex flex-col gap-y-2 w-[500px] mx-auto"
+        onSubmit={handleSubmit}
+      >
         <div className="relative flex items-center">
           <Input
             required
@@ -130,7 +133,7 @@ const Form = () => {
           <MessageSquare className="absolute top-4 right-6" size={20} />
         </div>
         <Button
-          className="flex items-center group gap-x-1 max-w-[166px]"
+          className="flex items-center group gap-x-4 max-w-[166px]"
           type="submit"
         >
           Let&apos;s Talk

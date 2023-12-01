@@ -10,7 +10,7 @@ const Footer = () => {
             iconStyles="text-primary dark:text-white/70 text-[20px] hover:text-white dark:hover:text-primary transition-all"
           />
           <div className="text-muted-foreground">
-            Copywright &copy; Axel Zwaans. All rights reserved.
+            Copyright &copy; Axel Zwaans. All rights reserved.
           </div>
         </div>
       </div>
