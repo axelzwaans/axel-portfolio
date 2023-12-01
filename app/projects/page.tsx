@@ -18,7 +18,8 @@ const projectData = [
     image: "/work/life-and-sole.png",
     category: "nextjs",
     name: "Life & Sole",
-    description: "A cool website I created for my local gym.",
+    description:
+      "A website for my local gym showcasing it's features and ethos.",
     link: "https://lifeandsole.vercel.app/",
     github: "https://github.com/axelzwaans/life-and-sole",
   },
@@ -45,7 +46,7 @@ const projectData = [
     category: "django",
     name: "House-Party",
     description:
-      "A web application that allows users to create a room for playing music together.",
+      "A web application that integrates with Spotify and allows users to create a room for playing music together.",
     link: "/",
     github: "https://github.com/axelzwaans/music_controller",
   },
