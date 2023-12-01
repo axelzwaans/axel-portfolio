@@ -4,7 +4,7 @@ import Lamp from "@/components/Lamp";
 
 const Contact = () => {
   return (
-    <section className="h-screen">
+    <section>
       <div className="container mx-auto">
         {/* text & illustration */}
         <div className="grid xl:grid-cols-2 pt-12 mb-6">
@@ -27,7 +27,7 @@ const Contact = () => {
         </div>
 
         {/* info text & form */}
-        <div className="grid xl:grid-cols-2 mb-24 xl:mb-32">
+        <div className="grid lg:grid-cols-2 mb-24 xl:mb-32">
           {/* info text */}
           <div className="flex flex-col gap-y-4 xl:gap-y-4 text-base xl:text-lg">
             {/* mail */}
@@ -46,7 +46,7 @@ const Contact = () => {
               <div>+44 7737 882 336</div>
             </div>
           </div>
-          <div className="mt-[-200px]">
+          <div className="mt-8 lg:mt-[-200px]">
             <Form />
           </div>
         </div>
