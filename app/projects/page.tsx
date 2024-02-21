@@ -4,77 +4,22 @@ import { useState } from "react";
 import { Tabs, TabsList, TabsContent, TabsTrigger } from "@/components/ui/tabs";
 import ProjectCard from "@/components/ProjectCard";
 
-const projectData = [
-  {
-    image: "/work/hotely.png",
-    category: "nextjs",
-    name: "Hotely",
-    description:
-      "A fully responsive hotel landing page built with Next.js and Tailwind CSS.",
-    link: "https://hotely-smoky.vercel.app/",
-    github: "https://github.com/axelzwaans/hotely",
-  },
-  {
-    image: "/work/life-and-sole.png",
-    category: "nextjs",
-    name: "Life & Sole",
-    description:
-      "A website for my local gym showcasing it's features and ethos.",
-    link: "https://lifeandsole.vercel.app/",
-    github: "https://github.com/axelzwaans/life-and-sole",
-  },
-  {
-    image: "/work/dev-overflow.png",
-    category: "nextjs",
-    name: "Dev Overflow",
-    description:
-      "A Q&A app for developers with voting, popularity and AI features.",
-    link: "https://stack-overflow-nextjs13-axelzwaans-projects.vercel.app/",
-    github: "https://github.com/axelzwaans/dev-flow",
-  },
-  {
-    image: "/work/flowrise.png",
-    category: "prismic",
-    name: "Flowrise",
-    description:
-      "A website for a productivity app using Prismic as a Headless Website Builder.",
-    link: "https://flowrise-prismic-xi.vercel.app",
-    github: "https://github.com/axelzwaans/flowrise-prismic",
-  },
-  {
-    image: "/work/house-party.png",
-    category: "django",
-    name: "House-Party",
-    description:
-      "A web application that integrates with Spotify and allows users to create a room for playing music together.",
-    link: "/",
-    github: "https://github.com/axelzwaans/music_controller",
-  },
-  {
-    image: "/work/ai-summarizer.png",
-    category: "ai",
-    name: "AI Summarizer",
-    description:
-      "An article summarization tool that allows users to paste a link to an article and receive a summary of its content.",
-    link: "https://ai-summarizer-rho-eight.vercel.app/",
-    github: "https://github.com/axelzwaans/ai-summarizer",
-  },
-];
+import { ProjectsList } from "../../public/projects/projects-list";
 
 // remove category duplicates
 const uniqueCategories = [
   "all projects",
-  ...new Set(projectData.map((item) => item.category)),
+  ...new Set(ProjectsList.flatMap((item) => item.category)),
 ];
 
 const Projects = () => {
   const [categories, setCategories] = useState(uniqueCategories);
   const [category, setCategory] = useState("all projects");
 
-  const filteredProjects = projectData.filter((project) => {
+  const filteredProjects = ProjectsList.filter((project) => {
     return category === "all projects"
-      ? project
-      : project.category === category;
+      ? true
+      : project.category.includes(category);
   });
 
   return (

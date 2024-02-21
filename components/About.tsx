@@ -177,11 +177,6 @@ const About = () => {
               {/* Personal */}
               <TabsContent value="personal">
                 <div className="text-center">
-                  <h3 className="h3 mb-4">Tailor-made websites</h3>
-                  <p className="subtitle w-[364px] lg:w-fit mx-auto">
-                    I create stylish websites using the latest technologies,
-                    delivering dynamic and engaging user experiences.
-                  </p>
                   {/* icons */}
                   <div className="grid xl:grid-cols-2 gap-4 mb-12">
                     {infoData.map((item, index) => {
@@ -207,7 +202,6 @@ const About = () => {
               {/* Qualifications */}
               <TabsContent value="qualifications">
                 <div>
-                  <h3 className="h3 mb-8 text-center">My Journey</h3>
                   {/* experience & education wrapper */}
                   <div className="grid md:grid-cols-2 gap-y-8">
                     {/* experience */}
@@ -286,7 +280,6 @@ const About = () => {
               {/* Skills */}
               <TabsContent value="skills">
                 <div className="text-center">
-                  <h3 className="h3 mb-8">What I&apos;m Working With...</h3>
                   <div className="mb-16">
                     <h4 className="text-xl font-semibold mb-2">Tech Stack</h4>
                     <div className="border-b border-border mb-4"></div>

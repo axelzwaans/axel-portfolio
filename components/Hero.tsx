@@ -28,19 +28,19 @@ const onButtonClick = () => {
 
 const Hero = () => {
   return (
-    <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
+    <section className="py-12 xl:py-24 h-screen xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
         <div className="flex justify-between gap-x-8">
           {/* text */}
           <div className="flex max-w-[600px] flex-col justify-center mx-auto xl:mx-0 text-center xl:text-left">
             <div className="text-sm uppercase font-semibold mb-4 text-primary tracking-[4px]">
-              Web Developer
+              Front-End Developer
             </div>
             <h1 className="h1 mb-4">Hi, I&apos;m Axel...</h1>
             <p className="subtitle max-w-[490px] mx-auto xl:mx-0">
-              I&apos;m a Scotland based front-end developer. I create
-              responsive, stunning & high-performing websites that elevate your
-              online presence.
+              I&apos;m a Scotland based front-end developer with a passion for
+              creating responsive, stunning & high-performing websites and
+              applications.
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">

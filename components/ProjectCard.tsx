@@ -38,9 +38,18 @@ const ProjectCard = ({ project }: any) => {
         </div>
       </CardHeader>
       <div className="h-full px-8 py-6">
-        <Badge className="uppercase text-sm font-medium mb-2 absolute top-4 left-5">
-          {project.category}
-        </Badge>
+        <div className="flex flex-wrap items-center gap-2 absolute top-4 left-5">
+          {project.category.map((cat: any, index: any) => (
+            <Badge
+              key={index}
+              className="text-sm font-medium "
+              style={{ left: `${5 + index * 110}px` }}
+            >
+              {cat}
+            </Badge>
+          ))}
+        </div>
+
         <h4 className="h4 mb-1">{project.name}</h4>
         <p className="text-muted-foreground text-lg">{project.description}</p>
       </div>

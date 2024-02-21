@@ -15,15 +15,15 @@ import { fadeIn } from "../variants";
 const servicesData = [
   {
     icon: <GanttChartSquare size={72} strokeWidth={0.8} />,
-    title: "Web Design",
+    title: "Front-End Development",
     description:
-      "Elevate your online presence with personalized designs. From sleek landing pages to powerful e-commerce sites, let's blend simplicity with creativity to make your brand stand out.",
+      "Boost your front-end team with a dedicated developer, focused on crafting responsive and engaging digital experiences. Known for being an exceptional team player with a strong appetite for learning, I continuously seek to expand my skills and contribute to collaborative success.",
   },
   {
     icon: <Blocks size={72} strokeWidth={0.8} />,
     title: "Web Development",
     description:
-      "Move beyond templates with custom, high-performance websites that prioritize functionality, boost performance, and adapt seamlessly to your evolving needs.",
+      "Elevate your brand with custom, high-performance websites that blend personalized designs, from sleek landing pages to powerful e-commerce platforms, with functionality and creativity for a standout online presence that adapts to your evolving needs.",
   },
 ];
 
