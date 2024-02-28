@@ -158,7 +158,7 @@ const About = () => {
           className="flex justify-center"
         >
           <Tabs defaultValue="personal">
-            <TabsList className="mx-auto w-[520px] grid xl:grid-cols-3 xl:border dark:border-none">
+            <TabsList className="mx-auto grid xl:grid-cols-3 xl:border dark:border-none">
               <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
                 Personal Info
               </TabsTrigger>
