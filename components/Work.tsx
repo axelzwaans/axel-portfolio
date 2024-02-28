@@ -28,7 +28,7 @@ const Work = () => {
           variants={fadeIn("right", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start"
         >
           <h2 className="section-title mb-4">Latest Projects</h2>
@@ -44,7 +44,7 @@ const Work = () => {
           variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="xl:max-w-[1000px] xl:absolute right-0 top-0 xl:px-8"
         >
           <Swiper

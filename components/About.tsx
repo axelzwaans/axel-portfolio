@@ -143,7 +143,7 @@ const About = () => {
           variants={fadeIn("up", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="section-title mb-8 xl:mb-16 text-center mx-auto"
         >
           About me
@@ -154,7 +154,7 @@ const About = () => {
           variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="flex justify-center"
         >
           <Tabs defaultValue="personal">

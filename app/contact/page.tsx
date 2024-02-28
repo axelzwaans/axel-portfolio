@@ -16,8 +16,8 @@ const Contact = () => {
             <h1 className="h1 max-w-md mb-8">Let&apos;s Work Together.</h1>
             <p className="subtitle max-w-[400px]">
               Are you looking for a new website or do you have a project in
-              mind? Use this well-lit form to email me or give me a call and
-              let&apos;s discuss how we can work together.
+              mind? Use this form to email me or give me a call and let&apos;s
+              discuss how we can work together.
             </p>
           </div>
           {/* lamp */}

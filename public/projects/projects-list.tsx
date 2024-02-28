@@ -1,8 +1,17 @@
 export const ProjectsList = [
   {
+    image: "/work/boardify.png",
+    category: ["nextjs", "stripe", "prisma", "mysql"],
+    name: "Boardify",
+    description:
+      "A productivity app that allows users to create boards, lists and cards to manage their tasks. It uses Stripe for payments and Prisma with MySQL for the database",
+    link: "https://boardify-ten.vercel.app",
+    github: "https://github.com/axelzwaans/boardify",
+  },
+  {
     image: "/work/photography.png",
     category: ["nextjs", "gsap", "framer-motion", "tailwind"],
-    name: "Photography website",
+    name: "Photography Website",
     description:
       "A photography website built with Next.js and Tailwind CSS. It uses GSAP for animations and Framer Motion for page transitions.",
     link: "https://photography-ruddy-sigma.vercel.app",
@@ -11,7 +20,7 @@ export const ProjectsList = [
   {
     image: "/work/prismic-porfolio.png",
     category: ["nextjs", "prismic", "threejs"],
-    name: "Prismic portfolio",
+    name: "Portfolio Website",
     description:
       "A portfolio website built Prismic as a Headless CMS and Next.js. It uses GSAP and Tailwind CSS for animations and styling.",
     link: "https://my-prismic-portfolio.vercel.app",

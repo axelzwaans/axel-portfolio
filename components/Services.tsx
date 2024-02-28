@@ -35,7 +35,7 @@ const Services = () => {
           variants={fadeIn("left", 0.2)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="section-title mb-12 xl:mb-24 text-center mx-auto"
         >
           My Services
@@ -45,13 +45,13 @@ const Services = () => {
           variants={fadeIn("left", 0.4)}
           initial="hidden"
           whileInView={"show"}
-          viewport={{ once: false, amount: 0.2 }}
+          viewport={{ once: true, amount: 0.2 }}
           className="grid xl:grid-flow-col justify-center gap-y-12 xl:gap-y-24 xl:gap-x-8"
         >
           {servicesData.map((item, index) => {
             return (
               <Card
-                className="w-full max-w-[424px] h-[300px] flex flex-col pt-16 pb-10 justify-center items-center relative"
+                className="w-full max-w-[424px] h-fit flex flex-col pt-16 pb-10 justify-center items-center relative"
                 key={index}
               >
                 <CardHeader className="text-primary absolute -top-[60px]">

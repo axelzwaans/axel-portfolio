@@ -37,7 +37,7 @@ const ProjectCard = ({ project }: any) => {
           </div>
         </div>
       </CardHeader>
-      <div className="h-full px-8 py-6">
+      <div className="px-8 py-3">
         <div className="flex flex-wrap items-center gap-2 absolute top-4 left-5">
           {project.category.map((cat: any, index: any) => (
             <Badge
@@ -50,8 +50,8 @@ const ProjectCard = ({ project }: any) => {
           ))}
         </div>
 
-        <h4 className="h4 mb-1">{project.name}</h4>
-        <p className="text-muted-foreground text-lg">{project.description}</p>
+        <h4 className="mb-1">{project.name}</h4>
+        <p className="text-muted-foreground leading-6">{project.description}</p>
       </div>
     </Card>
   );
