@@ -1,5 +1,14 @@
 export const ProjectsList = [
   {
+    image: "/work/brainwave.png",
+    category: ["nextjs", "tailwind"],
+    name: "Brainwave",
+    description:
+      "A website for a fictional company that which uses AI to enhance the user's productivity, built with Next.js and Tailwind CSS.",
+    link: "https://brainwave-one-plum.vercel.app",
+    github: "https://github.com/axelzwaans/brainwave",
+  },
+  {
     image: "/work/boardify.png",
     category: ["nextjs", "stripe", "prisma", "mysql"],
     name: "Boardify",

@@ -158,17 +158,14 @@ const About = () => {
           className="flex justify-center"
         >
           <Tabs defaultValue="personal">
-            <TabsList className="mx-auto grid xl:grid-cols-3 xl:border dark:border-none">
-              <TabsTrigger className="w-[162px] xl:w-auto" value="personal">
+            <TabsList className="mx-auto grid lg:grid-cols-3 xl:border dark:border-none w-fit lg:w-[520px]">
+              <TabsTrigger className="w-auto" value="personal">
                 Personal Info
               </TabsTrigger>
-              <TabsTrigger
-                className="w-[162px] xl:w-auto"
-                value="qualifications"
-              >
+              <TabsTrigger className="w-auto" value="qualifications">
                 Qualifications
               </TabsTrigger>
-              <TabsTrigger className="w-[162px] xl:w-auto" value="skills">
+              <TabsTrigger className="w-auto" value="skills">
                 Skills
               </TabsTrigger>
             </TabsList>
@@ -194,7 +191,7 @@ const About = () => {
                   {/* languages */}
                   <div className="flex flex-col gap-y-2">
                     <div className="text-primary">Languages</div>
-                    <div className="border-b border-brder"></div>
+                    <div className="border-b"></div>
                     <div>English, Dutch</div>
                   </div>
                 </div>

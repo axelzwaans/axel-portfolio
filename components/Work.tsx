@@ -48,7 +48,7 @@ const Work = () => {
           className="xl:max-w-[1000px] xl:absolute right-0 top-0 xl:px-8"
         >
           <Swiper
-            className="h-[480px]"
+            className="h-[520px]"
             slidesPerView={1}
             breakpoints={{ 640: { slidesPerView: 2 } }}
             spaceBetween={30}

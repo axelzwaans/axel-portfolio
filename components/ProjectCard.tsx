@@ -9,7 +9,7 @@ const ProjectCard = ({ project }: any) => {
     <Card className="group overflow-hidden relative">
       <CardHeader className="p-0">
         {/* image */}
-        <div className="relative w-full h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
+        <div className="relative w-full h-[320px] md:h-[300px] flex items-center justify-center bg-tertiary dark:bg-secondary/40 xl:bg-work_project_bg_light xl:dark:bg-work_project_bg_dark xl:bg-[110%] xl:bg-no-repeat overflow-hidden">
           <Image
             className="absolute bottom-0 shadow-2xl"
             src={project.image}
@@ -37,8 +37,8 @@ const ProjectCard = ({ project }: any) => {
           </div>
         </div>
       </CardHeader>
-      <div className="px-8 py-3">
-        <div className="flex flex-wrap items-center gap-2 absolute top-4 left-5">
+      <div className="px-4 py-3">
+        <div className="flex flex-wrap items-center gap-2 absolute top-4 left-4">
           {project.category.map((cat: any, index: any) => (
             <Badge
               key={index}
