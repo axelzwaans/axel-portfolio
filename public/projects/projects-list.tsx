@@ -1,5 +1,14 @@
 export const ProjectsList = [
   {
+    image: "/work/gym-website.png",
+    category: ["nextjs", "tailwind", "framer-motion"],
+    name: "Gym Website",
+    description:
+      "A website for a local gym built with Next.js and Tailwind CSS. It uses Framer Motion for animations.",
+    link: "https://gym-website-chi-three.vercel.app",
+    github: "https://github.com/axelzwaans/gym-website",
+  },
+  {
     image: "/work/brainwave.png",
     category: ["nextjs", "tailwind"],
     name: "Brainwave",
